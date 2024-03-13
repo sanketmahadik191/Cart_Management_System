@@ -15,7 +15,6 @@ const Product = ({ location,name, price, quantity, increaseQuantity, decreaseQua
         <button type="button" class="btn btn-primary"onClick={increaseQuantity}>+</button>
         <div className="product-quantity">{quantity}</div>
         <button type="button" class="btn btn-danger" onClick={decreaseQuantity}>-</button>
-       
       </div>
     </div>
   );

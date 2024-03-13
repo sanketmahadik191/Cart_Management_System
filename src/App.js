@@ -32,6 +32,10 @@ function App() {
 
   const totalProducts = products.reduce((acc, product) => acc + product.quantity, 0);
 
+  const clearProducts = () => {
+    setProducts([]);
+  };
+
   return (
     <div className="app">
     <nav className="navbar">
@@ -56,6 +60,7 @@ function App() {
        <h1>Total Price</h1>
       <div>${totalPrice}</div>
       </div>
+      <button type="button" class="btn btn-warning" onClick={clearProducts}>Clear Cart</button>
     </div>
   );
 }
